@@ -14,7 +14,7 @@
 		<div class="card">
 		  <div class="card-body">
 		    <h4 class="cart-title mb-4" > Billing Address</h4>
-		    <form class="" action="index.html" method="POST">
+		    <form  action="{% url 'place_order' %}" method="POST">
 					{% csrf_token %}
 		      <div class="form-row">
 		        <div class="col form-group">
@@ -49,15 +49,15 @@
 		      <div class="form-row">
 		        <div class="col form-group">
 		          <label for="">City</label>
-		          <input type="text" name="address_line_1" class="form-control" required>
+		          <input type="text" name="city" class="form-control" required>
 		        </div>
 		        <div class="col form-group">
 		          <label for="">State</label>
-		          <input type="text" name="address_line_2" class="form-control" required>
+		          <input type="text" name="state" class="form-control" required>
 		        </div>
 		        <div class="col form-group">
 		          <label for="">Country</label>
-		          <input type="text" name="address_line_2" class="form-control" required>
+		          <input type="text" name="country" class="form-control" required>
 		        </div>
 
 		      </div>
